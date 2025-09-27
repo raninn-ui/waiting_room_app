@@ -15,8 +15,7 @@ class _WaitingRoomTimestampState extends State<WaitingRoomTimestamp> {
     super.initState();
 // Initialize the current time when the widget is created
     _currentTime = DateTime.now();
-
-// Set up a periodic timer to update the state every second
+    // Set up a periodic timer to update the state every second
     _timer = Timer.periodic(const Duration(seconds: 1), (timer) {
 // Use setState to rebuild the widget with the new time
       setState(() {
